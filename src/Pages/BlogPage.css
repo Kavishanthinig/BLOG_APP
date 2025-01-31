@@ -1,0 +1,136 @@
+.my-blogs {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.my-blogs ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.my-blogs li {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.my-blogs li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my-blogs h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: purple;
+}
+
+.my-blogs p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.my-blogs em {
+  font-size: 12px;
+  color: #777;
+}
+
+.my-blogs button {
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #8b5cf6;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  font-weight: bold;
+  justify-content: baseline;
+}
+
+.my-blogs button:hover {
+  background-color: #6d28d9;
+}
+
+.my-blogs .edit-blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.my-blogs .edit-blog-form input,
+.my-blogs .edit-blog-form textarea {
+  width: 50%; 
+  padding: 50px;
+  margin-bottom: 10px;
+  border: 1px solid purple;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+.my-blogs .edit-blog-form input:focus,
+.my-blogs .edit-blog-form textarea:focus {
+  border-color: #8b5cf6;
+  outline: none;
+}
+
+.my-blogs .edit-blog-form button {
+  padding: 10px 15px;
+  background-color: #8b5cf6;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  align-self: flex-start; 
+}
+
+.my-blogs .edit-blog-form button.cancel {
+  background-color: #e11d48;
+}
+
+.my-blogs .edit-blog-form button.cancel:hover {
+  background-color: #be123c;
+}
+
+.my-blogs .edit-blog-form button:hover {
+  background-color: #6d28d9;
+}
+
+.my-blogs .edit-blog-form button.cancel:hover {
+  background-color: #c0214b;
+}
+
+@media (max-width: 768px) {
+  .my-blogs {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .my-blogs ul {
+    gap: 15px;
+  }
+
+  .my-blogs li {
+    font-size: 16px;
+  }
+
+  .my-blogs button {
+    padding: 6px 12px;
+  }
+
+  .my-blogs .edit-blog-form input,
+  .my-blogs .edit-blog-form textarea {
+    font-size: 16px;
+  }
+}
+

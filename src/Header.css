@@ -1,0 +1,30 @@
+/* Add styles to the header, navigation, and links */
+.header {
+  background-color:purple;
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content:end;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space out the links */
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #ddd; /* Change color on hover */
+}

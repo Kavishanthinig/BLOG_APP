@@ -1,0 +1,97 @@
+
+.subscribe-container {
+  margin-top:200%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid purple; /* Match header color */
+}
+
+.subscribe-container:hover {
+  transform: scale(1.02);
+}
+
+/* Heading */
+.subscribe-container h2 {
+  font-size: 24px;
+  color: purple; /* Match header color */
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Email input field */
+.email-input {
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-input:focus {
+  border-color: purple; /* Match theme */
+  box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+}
+
+/* Disabled input */
+.email-input:disabled {
+  background: #f3f3f3;
+  cursor: not-allowed;
+}
+
+.subscribe-btn {
+  width: 55%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: purple;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.subscribe-btn:hover {
+  background: #800080;
+  transform: scale(1.05);
+}
+.subscribe{
+  background:purple;
+
+}
+
+.subscribe-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.success-message {
+  font-size: 16px;
+  color: purple;
+  font-weight: bold;
+  margin-top: 15px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
