@@ -25,7 +25,7 @@ const SubscribePage = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:4000/subscribe", {
+      const response = await fetch("https://blog-backend-jd7l.onrender.com/subscribe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

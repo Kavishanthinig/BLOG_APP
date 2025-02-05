@@ -14,7 +14,7 @@ const MyBlogPage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('http://localhost:4000/blogs');
+        const response = await fetch('https://blog-backend-jd7l.onrender.com/blogs');
         const data = await response.json();
         setBlogs(data.blogs);
       } catch (error) {
@@ -28,7 +28,7 @@ const MyBlogPage = () => {
     e.preventDefault(); // Prevent form reload
   
     try {
-      const response = await fetch(`http://localhost:4000/blogs/update/${blogId}`, {
+      const response = await fetch(`https://blog-backend-jd7l.onrender.com/blogs/update/${blogId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ const MyBlogPage = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:4000/blogs/delete/${id}`, {
+      const response = await fetch(`https://blog-backend-jd7l.onrender.com/blogs/delete/${id}`, {
         method: 'DELETE',
       });
       const data = await response.json();

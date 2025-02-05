@@ -39,7 +39,7 @@ const CreatePostPage = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:4000/blogs/create', {
+      const response = await fetch('https://blog-backend-jd7l.onrender.com/blogs/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
